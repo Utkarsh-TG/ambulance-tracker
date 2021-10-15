@@ -90,12 +90,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-# load static files
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # set static files root
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static/'), # set static dir
-)
-STATIC_URL = os.path.join(BASE_DIR, '/static/') # set static url
+STATIC_URL = '/static/'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
